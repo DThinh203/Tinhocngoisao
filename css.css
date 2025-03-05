@@ -6,37 +6,99 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Body Styles */
 body {
-    background: linear-gradient(to right, #667eea, #764ba2);
+    background-color: #121212; /* Nền tối */
+    color: #E0E0E0; /* Chữ sáng */
     text-align: center;
-    color: #fff;
-    padding: 20px;
 }
 
-/* Header Styles */
+/* Header */
 header {
-    background: rgba(0, 0, 0, 0.2);
-    padding: 30px;
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    padding: 20px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar */
+nav {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    backdrop-filter: blur(10px);
     border-radius: 12px;
+    margin: 20px auto;
+    width: 60%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #00d4ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
+    text-shadow: 0px 0px 8px rgba(255, 221, 87, 0.8);
+}
+
+/* Ảnh đại diện */
+.profile {
+    margin: 40px 0;
+}
+
+.profile img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #007bff;
+    box-shadow: 0px 10px 20px rgba(0, 123, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile img:hover {
+    transform: scale(1.05);
+}
+
+/* Nội dung chính */
+.content {
+    padding: 50px 20px;
+}
+
+.content h2 {
+    font-size: 2rem;
+    color: #00d4ff;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 1.1rem;
+    color: #B0B0B0;
     margin-bottom: 20px;
 }
 
-header h1 {
-    font-size: 36px;
-    margin-bottom: 5px;
+/* Nút CTA */
+.cta-button {
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px
 }
-
-header p {
-    font-size: 18px;
-    font-weight: 300;
-}
-
-/* Main Sections */
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
